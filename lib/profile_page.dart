@@ -37,7 +37,7 @@ class ProfilePage extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.badge),
                   title: Text('Student ID'),
-                  subtitle: Text('2026-00001'),
+                  subtitle: Text('2026-554271'),
                 ),
                 ListTile(
                   leading: Icon(Icons.school),
@@ -47,7 +47,7 @@ class ProfilePage extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.email),
                   title: Text('Email'),
-                  subtitle: Text('prince.alegria@example.com'),
+                  subtitle: Text('p.alegria.554271@umindanao.edu.ph'),
                 ),
               ],
             ),
