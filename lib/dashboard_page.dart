@@ -1,38 +1,47 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class DashboardPage extends StatelessWidget {
+  final String username;
+
+  const DashboardPage({
+    super.key,
+    required this.username,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('Dashboard'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(24),
-        children: const [
-          Icon(
-            Icons.home,
+        children: [
+          const Icon(
+            Icons.dashboard,
             size: 80,
             color: Colors.indigo,
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
+
           Text(
-            'Welcome, Student!',
+            'Welcome, $username!',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 26,
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 12),
-          Text(
-            'Use the navigation bar below to explore the app.',
+          const SizedBox(height: 12),
+
+          const Text(
+            'Explore your student application using '
+            'the navigation bar below.',
             textAlign: TextAlign.center,
           ),
-          SizedBox(height: 24),
-          Card(
+          const SizedBox(height: 24),
+
+          const Card(
             child: Column(
               children: [
                 ListTile(
@@ -43,19 +52,21 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Divider(height: 1),
+
+                ListTile(
+                  leading: Icon(Icons.people),
+                  title: Text('Social'),
+                  subtitle: Text(
+                    'Create posts, like posts, and add comments.',
+                  ),
+                ),
+                Divider(height: 1),
+
                 ListTile(
                   leading: Icon(Icons.person),
                   title: Text('Profile'),
                   subtitle: Text(
-                    'View your student information.',
-                  ),
-                ),
-                Divider(height: 1),
-                ListTile(
-                  leading: Icon(Icons.share),
-                  title: Text('Social Media'),
-                  subtitle: Text(
-                    'View your sample social accounts.',
+                    'View student information and log out.',
                   ),
                 ),
               ],
