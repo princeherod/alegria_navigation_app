@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "186173481481",
+    "project_id": "prince-navigation-app",
+    "storage_bucket": "prince-navigation-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186173481481:android:7b3d29007584444b8a0ed8",
+        "android_client_info": {
+          "package_name": "com.example.alegria_navigation_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBazzMNEAsLxw-A2TfP06_UIHJhwE3TFew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
